@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://unpkg.com/tailwindcss@^1.0/dist/tailwind.min.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <title>Calculator</title>
+  </head>
+  <body id="body" class="bg-gray-900 text-white px-3 max-w-[1200px] pb-24">
+    <nav class="flex justify-between px-3 py-3">
+      <h1>Ulysses Tranquilino</h1>
+      <div class="flex items-center gap-3">
+        <a href="../../index.html">
+          <button
+            class="text-white p-1 px-4 rounded-md hover:bg-gray-800 outline-none border-none focus:outline-none focus:ring-0"
+          >
+            Home
+          </button>
+        </a>
+        <p>Activity 2</p>
+        <div id="mode" class="moon cursor-pointer" onclick="changeBG()">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            fill="none"
+            viewBox="0 0 24 24"
+            stroke-width="1.5"
+            stroke="currentColor"
+            class="size-6"
+          >
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              d="M21.752 15.002A9.72 9.72 0 0 1 18 15.75c-5.385 0-9.75-4.365-9.75-9.75 0-1.33.266-2.597.748-3.752A9.753 9.753 0 0 0 3 11.25C3 16.635 7.365 21 12.75 21a9.753 9.753 0 0 0 9.002-5.998Z"
+            />
+          </svg>
+        </div>
+      </div>
+    </nav>
+    <div class="flex justify-center mt-16 mb-10">
+      <h1 class="font-semibold text-xl md:text-3xl">Calculator</h1>
+    </div>
+
+    <div class="screen-container" id="screen-container">
+      <!-- Screen Container-->
+      <div
+        class="bg-gray-700 w-80 h-32 rounded-md flex justify-end items-end p-4"
+      >
+        <p id="display" class="text-4xl"></p>
+      </div>
+
+      <!-- Buttons Container -->
+      <div class="mt-4 grid gap-2">
+        <!-- Row 1 -->
+        <div class="grid grid-cols-4 gap-2">
+          <button class="bg-gray-800 p-5 rounded-md" onclick="clearScreen()">
+            AC
+          </button>
+          <button
+            class="bg-gray-800 p-5 rounded-md"
+            onclick="appendToDisplay('%')"
+          >
+            %
+          </button>
+          <button class="bg-gray-800 p-5 rounded-md" onclick="backSpace()">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              viewBox="0 0 24 24"
+              strokeWidth="{1.5}"
+              stroke="currentColor"
+              className="size-6 action-btn"
+            >
+              <path
+                strokeLinecap="round"
+                strokeLinejoin="round"
+                d="M12 9.75 14.25 12m0 0 2.25 2.25M14.25 12l2.25-2.25M14.25 12 12 14.25m-2.58 4.92-6.374-6.375a1.125 1.125 0 0 1 0-1.59L9.42 4.83c.21-.211.497-.33.795-.33H19.5a2.25 2.25 0 0 1 2.25 2.25v10.5a2.25 2.25 0 0 1-2.25 2.25h-9.284c-.298 0-.585-.119-.795-.33Z"
+              />
+            </svg>
+          </button>
+          <button
+            class="bg-blue-600 p-6 rounded-md highlight"
+            onclick="appendToDisplay('/')"
+          >
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke-width="1.5"
+              stroke="currentColor"
+              class="size-6"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                d="M4.499 11.998h15m-7.5-6.75h.008v.008h-.008v-.008Zm.375 0a.375.375 0 1 1-.75 0 .375.375 0 0 1 .75 0ZM12 18.751h.007v.007H12v-.007Zm.375 0a.375.375 0 1 1-.75 0 .375.375 0 0 1 .75 0Z"
+              />
+            </svg>
+          </button>
+        </div>
+
+        <!-- Row 2 -->
+        <div class="grid grid-cols-4 gap-2">
+          <button
+            class="bg-gray-800 p-5 rounded-md"
+            onclick="appendToDisplay('7')"
+          >
+            7
+          </button>
+          <button
+            class="bg-gray-800 p-5 rounded-md"
+            onclick="appendToDisplay('8')"
+          >
+            8
+          </button>
+          <button
+            class="bg-gray-800 p-5 rounded-md"
+            onclick="appendToDisplay('9')"
+          >
+            9
+          </button>
+          <button
+            class="bg-blue-600 p-6 rounded-md highlight"
+            onclick="appendToDisplay('*')"
+          >
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke-width="1.5"
+              stroke="currentColor"
+              class="size-6"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                d="M6 18 18 6M6 6l12 12"
+              />
+            </svg>
+          </button>
+        </div>
+
+        <!-- Row 3 -->
+        <div class="grid grid-cols-4 gap-2">
+          <button
+            class="bg-gray-800 p-5 rounded-md"
+            onclick="appendToDisplay('4')"
+          >
+            4
+          </button>
+          <button
+            class="bg-gray-800 p-5 rounded-md"
+            onclick="appendToDisplay('5')"
+          >
+            5
+          </button>
+          <button
+            class="bg-gray-800 p-5 rounded-md"
+            onclick="appendToDisplay('6')"
+          >
+            6
+          </button>
+          <button
+            class="bg-blue-600 p-6 rounded-md highlight"
+            onclick="appendToDisplay('-')"
+          >
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke-width="1.5"
+              stroke="currentColor"
+              class="size-6"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                d="M5 12h14"
+              />
+            </svg>
+          </button>
+        </div>
+
+        <!-- Row 4 -->
+        <div class="grid grid-cols-4 gap-2">
+          <button
+            class="bg-gray-800 p-5 rounded-md"
+            onclick="appendToDisplay('1')"
+          >
+            1
+          </button>
+          <button
+            class="bg-gray-800 p-5 rounded-md"
+            onclick="appendToDisplay('2')"
+          >
+            2
+          </button>
+          <button
+            class="bg-gray-800 p-5 rounded-md"
+            onclick="appendToDisplay('3')"
+          >
+            3
+          </button>
+          <button
+            class="bg-blue-600 p-6 rounded-md highlight"
+            onclick="appendToDisplay('+')"
+          >
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke-width="1.5"
+              stroke="currentColor"
+              class="size-6"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                d="M12 4.5v15m7.5-7.5h-15"
+              />
+            </svg>
+          </button>
+        </div>
+
+        <!-- Row 5 -->
+        <div class="grid grid-cols-4 gap-2">
+          <button
+            class="bg-gray-800 p-5 rounded-md col-span-2"
+            onclick="appendToDisplay('0')"
+          >
+            0
+          </button>
+
+          <button
+            class="bg-gray-800 p-5 rounded-md"
+            onclick="appendToDisplay('.')"
+          >
+            .
+          </button>
+          <button
+            class="bg-blue-600 p-6 rounded-md highlight"
+            onclick="calculate()"
+          >
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke-width="1.5"
+              stroke="currentColor"
+              class="size-6"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                d="M4.499 8.248h15m-15 7.501h15"
+              />
+            </svg>
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>

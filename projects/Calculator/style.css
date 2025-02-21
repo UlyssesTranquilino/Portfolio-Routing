@@ -1,0 +1,32 @@
+.screen-container {
+  max-width: 400px;
+  margin: auto;
+}
+
+svg {
+  max-width: 30px;
+  margin: auto;
+}
+
+.moon svg {
+  width: 18px;
+}
+
+#mode:active,
+button {
+  border: none;
+  outline: none;
+}
+
+#mode:focus,
+button {
+  outline: none;
+}
+
+button:hover {
+  background-color: #374151;
+}
+
+.highlight:hover {
+  background-color: #3b82f6;
+}

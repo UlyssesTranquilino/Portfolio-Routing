@@ -1,0 +1,19 @@
+.notes-container {
+  max-width: 1200px;
+  margin: auto;
+}
+
+.note {
+  height: 180px;
+}
+
+.note p:focus {
+  outline: none;
+}
+
+.placeholder:empty:before {
+  content: attr(data-placeholder);
+  color: rgb(255, 255, 255);
+  pointer-events: none;
+  font-style: italic;
+}

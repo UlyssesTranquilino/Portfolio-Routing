@@ -1,428 +1,468 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <link rel="stylesheet" type="text/css" href="style_responsive.css">
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-        <link rel="preconnect" href="https://fonts.gstatic.com">
-        <link href="https://fonts.googleapis.com/css2?family=Fredoka+One&family=Play&display=swap" rel="stylesheet">
-        <link rel="stylesheet" type="text/css" href="header.css">
-        <link rel="stylesheet" type="text/css" href="about.css">
-        <link rel="stylesheet" type="text/css" href="aboutme_image.css">
-        <link rel="stylesheet" type="text/css" href="aboutme.css">
-        <link rel="stylesheet" type="text/css" href="projects.css">
-        <link rel="stylesheet" type="text/css" href="contacts.css">
-        <link rel="stylesheet" type="text/css" href="footer.css">
-        <link rel="stylesheet" type="text/css" href="sidebar.css">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" type="text/css" href="style_responsive.css" />
+    <script src="https://unpkg.com/@tailwindcss/browser@4"></script>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Fredoka+One&family=Play&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" type="text/css" href="header.css" />
+    <link rel="stylesheet" type="text/css" href="about.css" />
+    <link rel="stylesheet" type="text/css" href="aboutme_image.css" />
+    <link rel="stylesheet" type="text/css" href="aboutme.css" />
+    <link rel="stylesheet" type="text/css" href="projects.css" />
+    <link rel="stylesheet" type="text/css" href="contacts.css" />
+    <link rel="stylesheet" type="text/css" href="footer.css" />
+    <link rel="stylesheet" type="text/css" href="sidebar.css" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"
+    />
 
+    <title>Ulysses Tranquilino - Designer & Web Developer Portfolio</title>
+  </head>
+  <body>
+    <header class="header container">
+      <div class="header__logo logo-container">
+        ULYSSES <span style="color: #27ff7a">TRANQUILINO</span>
+      </div>
 
-        <title>Ulysses Tranquilino - Designer & Web Developer Portfolio</title>
-    </head>
-    <body>
-        <header class="header container">
-            <div class="header__logo logo-container">
-                ULYSSES <span style="color: #27ff7a;">TRANQUILINO</span>
+      <nav>
+        <ul class="header__menu">
+          <li><a class="header__link" href="#home">HOME</a></li>
+          <li><a class="header__link" href="#about">ABOUT</a></li>
+          <li><a class="header__link" href="#projects">PROJECTS</a></li>
+          <li>
+            <a class="header__link contact_link" href="#contact">CONTACT</a>
+          </li>
+        </ul>
+        <button class="header__bars">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            viewBox="0 0 24 24"
+            fill="currentColor"
+          >
+            <path
+              fill-rule="evenodd"
+              d="M3 6.75A.75.75 0 013.75 6h16.5a.75.75 0 010 1.5H3.75A.75.75 0 013 6.75zM3 12a.75.75 0 01.75-.75h16.5a.75.75 0 010 1.5H3.75A.75.75 0 013 12zm0 5.25a.75.75 0 01.75-.75h16.5a.75.75 0 010 1.5H3.75a.75.75 0 01-.75-.75z"
+              clip-rule="evenodd"
+            />
+          </svg>
+        </button>
+      </nav>
+    </header>
+
+    <div class="mobile-nav">
+      <nav>
+        <ul class="mobile-nav__menu">
+          <li>
+            <a class="mobile-nav__link" href="#home">HOME</a>
+          </li>
+          <li>
+            <a class="mobile-nav__link" href="#about">ABOUT</a>
+          </li>
+          <li>
+            <a class="mobile-nav__link" href="#projects">PROJECTS</a>
+          </li>
+          <li>
+            <a class="mobile-nav__link" href="#contact">CONTACT</a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+
+    <div class="cursor"></div>
+
+    <div id="page-container">
+      <div id="content-wrap">
+        <main>
+          <section id="home" class="about container section reveal">
+            <div class="about__content">
+              <h1 class="gradient">INNOVATE.</h1>
+              <h1 class="gradient">CREATE.</h1>
+              <h1 class="gradient">CAPTIVATE.</h1>
+              <p class="below">Welcome to my Portfolio Website!</p>
+
+              <hr class="about__hr" />
+
+              <div class="button-container">
+                <a href="#projects" class="button_link"
+                  ><button class="button-64" role="button">
+                    <span class="text">SEE PROJECTS</span>
+                  </button></a
+                >
+                <img src="arrow.png" class="arrow" alt="arrow" />
+              </div>
             </div>
 
-            <nav>
-                <ul class="header__menu">
-                    <li><a class="header__link" href="#home">HOME</a></li>
-                    <li><a class="header__link" href="#about">ABOUT</a></li>
-                    <li><a class="header__link" href="#projects">PROJECTS</a></li>
-                    <li><a class="header__link contact_link" href="#contact">CONTACT</a></li>
-                </ul>
-                <button class="header__bars">
-                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" >
-                        <path fill-rule="evenodd" d="M3 6.75A.75.75 0 013.75 6h16.5a.75.75 0 010 1.5H3.75A.75.75 0 013 6.75zM3 12a.75.75 0 01.75-.75h16.5a.75.75 0 010 1.5H3.75A.75.75 0 013 12zm0 5.25a.75.75 0 01.75-.75h16.5a.75.75 0 010 1.5H3.75a.75.75 0 01-.75-.75z" clip-rule="evenodd" />
-                    </svg>
-                      
-                </button>
-            </nav>
-        </header>
-
-        <div class="mobile-nav">
-            <nav>
-                <ul class="mobile-nav__menu">
-                    <li>
-                        <a class="mobile-nav__link" href="#home">HOME</a>
-                    </li>
-                    <li>
-                        <a class="mobile-nav__link" href="#about">ABOUT</a>
-                    </li>
-                    <li>
-                        <a class="mobile-nav__link" href="#projects">PROJECTS</a>
-                    </li>
-                    <li>
-                        <a class="mobile-nav__link" href="#contact">CONTACT</a>
-                    </li>
-                </ul>
-            </nav>
-
-        </div>
-
-
-
-
-        <div class="cursor"></div>
-
-
-
-
-
-        <div id="page-container">
-        <div id="content-wrap"> 
-        <main>
-
-            <section id="home" class="about container section reveal">
-                <div class="about__content" >
-                    <h1 class="gradient">INNOVATE.</h1>
-                    <h1  class="gradient">CREATE.</h1>
-                    <h1 class="gradient">CAPTIVATE.</h1>
-                    <p class="below">Welcome to my Portfolio Website!</p>
-                
-                    <hr class="about__hr">
-                
-                    <div class="button-container">
-                        <a href="#projects" class="button_link"><button class="button-64" role="button"><span class="text">SEE PROJECTS</span></button></a>
-                        <img src="arrow.png" class="arrow" alt="arrow">
-                    </div>
-                </div>
-
-                
-                <div class="about">
-                    <div class="about__content">
-                        <div class="label">
-                            <div class="image-container up_down">
-                                <img class="about__image" src="profile.gif" alt="Profile Picture">
-                            </div>
-                            <div class="text-content">
-                                <h3>Ulysses A. Tranquilino</h3>
-                                <h2 class="design">Designer & Web Developer</h2>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-            </section>
-
-            <section class="image_aboutme reveal">
-                <img src="abt.png" class="abt" alt="About Me">
-            </section>
-
-
-
-
-
-           
-
-
-
-
-
-            <section id="about" class="aboutme container section reveal">
-                <div>
-                    <h1 class="gradient2">ABOUT ME</h1>
-                    <p class="description">
-                        Hello! I'm Ulysses A. Tranquilino, a first-year Computer Science 
-                        student at Ateneo de Naga University. Driven by a passion for technology 
-                        and its potential to solve real-world problems, I aspire to leverage my 
-                        skills and knowledge to create innovative solutions. My toolkit includes 
-                        graphic design, video/photo editing, and problem-solving, which I believe 
-                        are crucial assets in the ever-evolving field of computer science.
-                    </p>
-
-                    <p class="description">
-                        Inspired by Ben Sweetland's quote, <i>"Success is not a destination, it is 
-                        a journey,"</i> I am committed to continuous learning and growth in the 
-                        field of programming. Beyond my academic pursuits, I find joy in cycling, 
-                        working out, playing the guitar, designing, video editing, and music. 
-                        These activities allow me to express my creativity and explore new 
-                        interests.
-                    </p>
-                </div>
- 
-                <div class="images">
-                    <figure class="first">
-                        <img src="Photoshop.png" class="pic" alt="Photoshop">
-                        <figcaption>
-                            <p class="years">6+</p>
-                            <p class="exp">YEARS OF <br>EXPERIENCE</p>
-                        </figcaption>
-                    </figure>	
-        
-                    <figure class="second">
-                        <img src="Premiere.png" class="pic" alt="Premiere">
-                        <figcaption>
-                            <p class="years">3+</p>
-                            <p class="exp">YEARS OF <br>EXPERIENCE</p>
-                        </figcaption>
-                    </figure>
-        
-                    <figure class="third">
-                        <img src="HTML.png" class="pic" alt="HTML">
-                            <figcaption>
-                                <p class="years">1+</p>
-                                <p class="exp">YEARS OF <br>EXPERIENCE</p>
-                            </figcaption>
-                    </figure>
-                    
-                    <figure class="fourth">
-                        <img src="CSS.png" class="pic" alt="CSS">
-                            <figcaption>
-                                <p class="years">1+</p>
-                                <p class="exp">YEARS OF <br>EXPERIENCE</p>
-                            </figcaption>
-                    </figure>
-                </div>
-
-                
-            </section>
-
-
-            <section id="projects" class="projects container section reveal">
-                <div class="container3">
-                    <h1 class="gradient3">PROJECTS</h1>
-                    <div class="projects_img">
-                        <figure>
-                            <img src="pro1.png" alt="cafe" class="cafe_img">
-        
-                            <figcaption class="cafe">Cafe Menu</figcaption>
-        
-                        </figure>
-        
-                        <figure>
-                            <img src="pr2.png" alt="resume" class="resume_img">
-        
-                            <figcaption class="resume">Resume</figcaption>
-                        </figure>
-        
-        
-                        <figure>
-                            <img src="pr3.png" alt="survey" class="survey_img">
-        
-                            <figcaption class="survey">Survey Form</figcaption>
-                        </figure>
-        
-                    </div>
-
-                    <figure>
-                        <img src="pr4.png" alt="login" class="login_img">
-                                
-                        <figcaption class="log">Login/ Registration</figcaption>
-                    </figure>
-
-                    
-
-                </div>
-
-            </section>
-
-            <section id="contact" class="contacts container section reveal">
-                <div class="container4">
-                    <h1 class="gradient4">LET'S CONNECT!</h1>
-                    <p>Have a project in mind or just want to say hello? I'm always open to new opportunities and collaborations.</p>
-                    <img src="phone.png" alt="phone">
-                </div>
-
-
-                <div class="form">
-                    <form class="contact-form">
-                        <label for="firstName">First Name:</label>
-                        <div class="form-input">
-                            <input type="text" id="firstName" name="firstName" placeholder="Enter your first name" required>
-                        </div>
-                        
-                        <label for="lastName">Last Name:</label>
-                        <div class="form-input">
-                            <input type="text" id="lastName" name="lastName" placeholder="Enter your last name" required>
-                        </div>
-            
-                        <label for="contactNumber">Contact Number:</label>
-                        <div class="form-input">
-                            <input type="tel" id="contactNumber" name="contactNumber" placeholder="Enter your contact number" required>
-                        </div>
-            
-                        <label for="email">Email:</label>
-                        <div class="form-input">
-                            <input type="email" id="email" name="email" placeholder="Enter your email" required>
-                        </div>
-            
-                        <label for="suggestion">Comments/ Suggestions:</label>
-                        <div class="form-input">
-                            <textarea id="suggestion" name="suggestion" rows="4" placeholder="Enter your comments/suggestions here..."  required></textarea>
-                        </div>
-                        <div class="button_c">
-                            <a href="/"><button class="bn632-hover bn19">Submit</button></a> 
-                        </div>
-        
-                    </form>
-                                   
-                </div>
-                
-            </section>
-        </main>
-
-
-        <a href="#" class="to-top">
-        </a>
-
-
-        <footer class="foot">
-            <div class="footer">
-                <div class="row">
-                  <a href="https://www.facebook.com/ulysses.tranquilino/" target="_blank"><i class="fa fa-facebook"></i></a>
-                  <a href="https://www.instagram.com/" target="_blank"><i class="fa fa-instagram"></i></a>
-                  <a href="https://github.com/UlyssesTranquilino" target="_blank"><i class="fa fa-github"></i></a>
-                  <a href="https://www.linkedin.com/in/ulysses-tranquilino-923294298/?originalSubdomain=ph" target="_blank"><i class="fa fa-linkedin"></i></a>
-                </div>
-            
-                <div class="row">
-                  <p>© 2023 Ulysses Tranquilino All rights reserved.</p>
+            <div class="about">
+              <div class="about__content">
+                <div class="label">
+                  <div class="image-container up_down">
+                    <img
+                      class="about__image"
+                      src="profile.gif"
+                      alt="Profile Picture"
+                    />
+                  </div>
+                  <div class="text-content">
+                    <h3>Ulysses A. Tranquilino</h3>
+                    <h2 class="design">Designer & Web Developer</h2>
+                  </div>
                 </div>
               </div>
+            </div>
+          </section>
+
+          <section class="image_aboutme reveal">
+            <img src="abt.png" class="abt" alt="About Me" />
+          </section>
+
+          <section id="about" class="aboutme container section reveal">
+            <div>
+              <h1 class="gradient2">ABOUT ME</h1>
+              <p class="description">
+                Hello! I'm Ulysses A. Tranquilino, a first-year Computer Science
+                student at Ateneo de Naga University. Driven by a passion for
+                technology and its potential to solve real-world problems, I
+                aspire to leverage my skills and knowledge to create innovative
+                solutions. My toolkit includes graphic design, video/photo
+                editing, and problem-solving, which I believe are crucial assets
+                in the ever-evolving field of computer science.
+              </p>
+
+              <p class="description">
+                Inspired by Ben Sweetland's quote,
+                <i>"Success is not a destination, it is a journey,"</i> I am
+                committed to continuous learning and growth in the field of
+                programming. Beyond my academic pursuits, I find joy in cycling,
+                working out, playing the guitar, designing, video editing, and
+                music. These activities allow me to express my creativity and
+                explore new interests.
+              </p>
+            </div>
+
+            <div class="images">
+              <figure class="first">
+                <img src="Photoshop.png" class="pic" alt="Photoshop" />
+                <figcaption>
+                  <p class="years">6+</p>
+                  <p class="exp">YEARS OF <br />EXPERIENCE</p>
+                </figcaption>
+              </figure>
+
+              <figure class="second">
+                <img src="Premiere.png" class="pic" alt="Premiere" />
+                <figcaption>
+                  <p class="years">3+</p>
+                  <p class="exp">YEARS OF <br />EXPERIENCE</p>
+                </figcaption>
+              </figure>
+
+              <figure class="third">
+                <img src="HTML.png" class="pic" alt="HTML" />
+                <figcaption>
+                  <p class="years">1+</p>
+                  <p class="exp">YEARS OF <br />EXPERIENCE</p>
+                </figcaption>
+              </figure>
+
+              <figure class="fourth">
+                <img src="CSS.png" class="pic" alt="CSS" />
+                <figcaption>
+                  <p class="years">1+</p>
+                  <p class="exp">YEARS OF <br />EXPERIENCE</p>
+                </figcaption>
+              </figure>
+            </div>
+          </section>
+
+          <section id="projects" class="projects container section reveal">
+            <div class="container3">
+              <h1 class="gradient3">PROJECTS</h1>
+              <div
+                class="flex flex-col items-center justify-center gap-20 md:pt-40 px-3 projects-container"
+              >
+                <a href="./projects/Calculator/index.html">
+                  <div class="w-full h-60 cursor-pointer">
+                    <img
+                      src="./assets/Calculator.png"
+                      alt="cafe"
+                      class="object-cover"
+                    />
+                    <h1 class="font-semibold text-2xl mt-3">Calculator</h1>
+                  </div>
+                </a>
+
+                <a href="./projects/Notes/index.html">
+                  <div class="w-full h-60 md:pt-10">
+                    <img
+                      src="./assets/NotesApp.png"
+                      alt="resume"
+                      class="object-cover"
+                    />
+
+                    <h1 class="font-semibold text-2xl mt-3">Notes App</h1>
+                  </div>
+                </a>
+              </div>
+            </div>
+          </section>
+
+          <section id="contact" class="contacts container section reveal">
+            <div class="container4">
+              <h1 class="gradient4">LET'S CONNECT!</h1>
+              <p>
+                Have a project in mind or just want to say hello? I'm always
+                open to new opportunities and collaborations.
+              </p>
+              <img src="phone.png" alt="phone" />
+            </div>
+
+            <div class="form">
+              <form class="contact-form">
+                <label for="firstName">First Name:</label>
+                <div class="form-input">
+                  <input
+                    type="text"
+                    id="firstName"
+                    name="firstName"
+                    placeholder="Enter your first name"
+                    required
+                  />
+                </div>
+
+                <label for="lastName">Last Name:</label>
+                <div class="form-input">
+                  <input
+                    type="text"
+                    id="lastName"
+                    name="lastName"
+                    placeholder="Enter your last name"
+                    required
+                  />
+                </div>
+
+                <label for="contactNumber">Contact Number:</label>
+                <div class="form-input">
+                  <input
+                    type="tel"
+                    id="contactNumber"
+                    name="contactNumber"
+                    placeholder="Enter your contact number"
+                    required
+                  />
+                </div>
+
+                <label for="email">Email:</label>
+                <div class="form-input">
+                  <input
+                    type="email"
+                    id="email"
+                    name="email"
+                    placeholder="Enter your email"
+                    required
+                  />
+                </div>
+
+                <label for="suggestion">Comments/ Suggestions:</label>
+                <div class="form-input">
+                  <textarea
+                    id="suggestion"
+                    name="suggestion"
+                    rows="4"
+                    placeholder="Enter your comments/suggestions here..."
+                    required
+                  ></textarea>
+                </div>
+                <div class="button_c">
+                  <a href="/"
+                    ><button class="bn632-hover bn19">Submit</button></a
+                  >
+                </div>
+              </form>
+            </div>
+          </section>
+        </main>
+
+        <a href="#" class="to-top"> </a>
+
+        <footer class="foot absolute bottom-0 w-full">
+          <div class="footer absolute bottom-0 w-full">
+            <div class="row">
+              <a
+                href="https://www.facebook.com/ulysses.tranquilino/"
+                target="_blank"
+                ><i class="fa fa-facebook"></i
+              ></a>
+              <a href="https://www.instagram.com/" target="_blank"
+                ><i class="fa fa-instagram"></i
+              ></a>
+              <a href="https://github.com/UlyssesTranquilino" target="_blank"
+                ><i class="fa fa-github"></i
+              ></a>
+              <a
+                href="https://www.linkedin.com/in/ulysses-tranquilino-923294298/?originalSubdomain=ph"
+                target="_blank"
+                ><i class="fa fa-linkedin"></i
+              ></a>
+            </div>
+
+            <div class="row">
+              <p>© 2023 Ulysses Tranquilino All rights reserved.</p>
+            </div>
+          </div>
         </footer>
+      </div>
     </div>
-    </div>
 
-        <script>
+    <script>
+      const headerBars = document.querySelector(".header__bars");
+      const mobileNav = document.querySelector(".mobile-nav");
 
-const headerBars = document.querySelector('.header__bars');
-const mobileNav = document.querySelector('.mobile-nav');
-
-headerBars.addEventListener('click', () => {
-  mobileNav.classList.toggle('active');
-  if (mobileNav.classList.contains('active')) {
-    document.documentElement.style.overflow = 'hidden';
-  } else {
-    document.documentElement.style.overflow = 'auto';
-  }
-});
-
-
-document.addEventListener('DOMContentLoaded', function () {
-    const headerBtn = document.querySelector('.header__bars');
-    const mobileNav = document.querySelector('.mobile-nav');
-    const logoContainer = document.querySelector('.logo-container');
-
-    let isMobileNavOpen = false;
-
-    headerBtn.addEventListener('click', () => {
-        isMobileNavOpen = !isMobileNavOpen;
-        if (isMobileNavOpen) {
-            mobileNav.style.display = 'flex';
-            document.body.style.overflow = 'hidden';
-            logoContainer.classList.add('hide-logo');
+      headerBars.addEventListener("click", () => {
+        mobileNav.classList.toggle("active");
+        if (mobileNav.classList.contains("active")) {
+          document.documentElement.style.overflow = "hidden";
         } else {
-            mobileNav.style.display = 'none';
-            document.body.style.overflow = 'auto';
-            logoContainer.classList.remove('hide-logo');
+          document.documentElement.style.overflow = "auto";
         }
-    });
+      });
 
-    const navLinks = document.querySelectorAll('.mobile-nav__link');
+      document.addEventListener("DOMContentLoaded", function () {
+        const headerBtn = document.querySelector(".header__bars");
+        const mobileNav = document.querySelector(".mobile-nav");
+        const logoContainer = document.querySelector(".logo-container");
 
-    navLinks.forEach(link => {
-        link.addEventListener('click', () => {
-            mobileNav.style.display = 'none';
-            document.body.style.overflow = 'auto';
-            logoContainer.classList.remove('hide-logo');
-            isMobileNavOpen = false;
+        let isMobileNavOpen = false;
+
+        headerBtn.addEventListener("click", () => {
+          isMobileNavOpen = !isMobileNavOpen;
+          if (isMobileNavOpen) {
+            mobileNav.style.display = "flex";
+            document.body.style.overflow = "hidden";
+            logoContainer.classList.add("hide-logo");
+          } else {
+            mobileNav.style.display = "none";
+            document.body.style.overflow = "auto";
+            logoContainer.classList.remove("hide-logo");
+          }
         });
-    });
 
-    const toTop = document.querySelector(".to-top");
+        const navLinks = document.querySelectorAll(".mobile-nav__link");
 
-    window.addEventListener("scroll", () => {
-        if (window.pageYOffset > 100 && window.pageYOffset < document.documentElement.scrollHeight) {
+        navLinks.forEach((link) => {
+          link.addEventListener("click", () => {
+            mobileNav.style.display = "none";
+            document.body.style.overflow = "auto";
+            logoContainer.classList.remove("hide-logo");
+            isMobileNavOpen = false;
+          });
+        });
+
+        const toTop = document.querySelector(".to-top");
+
+        window.addEventListener("scroll", () => {
+          if (
+            window.pageYOffset > 100 &&
+            window.pageYOffset < document.documentElement.scrollHeight
+          ) {
             toTop.classList.add("active");
-        } else {
+          } else {
             toTop.classList.remove("active");
-        }
-    });
+          }
+        });
 
-    toTop.addEventListener("click", () => {
-        window.scrollTo({
+        toTop.addEventListener("click", () => {
+          window.scrollTo({
             top: 0,
             behavior: "smooth",
+          });
         });
-    });
 
-    document.addEventListener('keydown', (e) => {
-        if (e.key === 'Escape' && isMobileNavOpen) {
-            mobileNav.style.display = 'none';
-            document.body.style.overflow = 'auto';
-            logoContainer.classList.remove('hide-logo');
+        document.addEventListener("keydown", (e) => {
+          if (e.key === "Escape" && isMobileNavOpen) {
+            mobileNav.style.display = "none";
+            document.body.style.overflow = "auto";
+            logoContainer.classList.remove("hide-logo");
             isMobileNavOpen = false;
-        }
-    });
+          }
+        });
 
-    document.addEventListener('click', (e) => {
-        if (isMobileNavOpen && !mobileNav.contains(e.target) && !headerBtn.contains(e.target)) {
-            mobileNav.style.display = 'none';
-            document.body.style.overflow = 'auto';
-            logoContainer.classList.remove('hide-logo');
+        document.addEventListener("click", (e) => {
+          if (
+            isMobileNavOpen &&
+            !mobileNav.contains(e.target) &&
+            !headerBtn.contains(e.target)
+          ) {
+            mobileNav.style.display = "none";
+            document.body.style.overflow = "auto";
+            logoContainer.classList.remove("hide-logo");
             isMobileNavOpen = false;
-        }
-    });
+          }
+        });
 
-    window.addEventListener('resize', () => {
-        if (isMobileNavOpen) {
-            mobileNav.style.display = 'none';
-            document.body.style.overflow = 'auto';
-            logoContainer.classList.remove('hide-logo');
+        window.addEventListener("resize", () => {
+          if (isMobileNavOpen) {
+            mobileNav.style.display = "none";
+            document.body.style.overflow = "auto";
+            logoContainer.classList.remove("hide-logo");
             isMobileNavOpen = false;
-        }
-    });
+          }
+        });
 
-    const sections = document.querySelectorAll('section');
+        const sections = document.querySelectorAll("section");
 
-    function reveal() {
-        sections.forEach(section => {
+        function reveal() {
+          sections.forEach((section) => {
             var windowheight = window.innerHeight;
             var revealtop = section.getBoundingClientRect().top;
             var revealpoint = 150;
 
             var opacity = 0;
             if (revealtop < windowheight - revealpoint) {
-                opacity = Math.min(1, (windowheight - revealtop) / revealpoint);
-                section.classList.add('active');
+              opacity = Math.min(1, (windowheight - revealtop) / revealpoint);
+              section.classList.add("active");
             } else {
-                section.classList.remove('active');
+              section.classList.remove("active");
             }
 
             section.style.opacity = opacity;
-        });
-    }
+          });
+        }
 
-    window.addEventListener('scroll', reveal);
-    window.addEventListener('load', reveal);
-});
-        	
-	const cursor = document.querySelector(".cursor");
-	var timeout;
+        window.addEventListener("scroll", reveal);
+        window.addEventListener("load", reveal);
+      });
 
-	document.addEventListener("mousemove", (e) => {
-	  let x = e.clientX;
-	  let y = e.clientY; 
-	  cursor.style.top = y + "px";
-	  cursor.style.left = x + "px";
-	  cursor.style.display = "block";
+      const cursor = document.querySelector(".cursor");
+      var timeout;
 
-	  function mouseStopped() {
-		cursor.style.display = "none";
-	  }
+      document.addEventListener("mousemove", (e) => {
+        let x = e.clientX;
+        let y = e.clientY;
+        cursor.style.top = y + "px";
+        cursor.style.left = x + "px";
+        cursor.style.display = "block";
 
-	  clearTimeout(timeout);
-	  timeout = setTimeout(mouseStopped, 5000);
-	});
+        function mouseStopped() {
+          cursor.style.display = "none";
+        }
 
-	document.addEventListener("mouseout", () => {
-	  cursor.style.display = "none";
-	});
+        clearTimeout(timeout);
+        timeout = setTimeout(mouseStopped, 5000);
+      });
 
-
-    
-        </script>
-    </body>
+      document.addEventListener("mouseout", () => {
+        cursor.style.display = "none";
+      });
+    </script>
+  </body>
 </html>

@@ -1,197 +1,204 @@
 .container3 {
-    text-align: center;
-    padding-top: 1rem;
-  }
-  
+  text-align: center;
+  padding-top: 1rem;
+}
+
 .gradient3 {
-    background: -webkit-linear-gradient(#36fa82, #2fd2d1);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    font-size: var(--size-5xl);
-    font-weight: 900;
-  }
+  background: -webkit-linear-gradient(#36fa82, #2fd2d1);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-size: var(--size-5xl);
+  font-weight: 900;
+}
 
 .projects_img {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding-top: 0.5rem;
+  gap: 20px;
+}
+
+.projects img {
+  height: 13rem;
+}
+
+.login {
+  height: 14rem;
+}
+
+.cafe,
+.resume,
+.survey,
+.log {
+  font-size: var(--size-base);
+  font-weight: 500;
+}
+
+/* xs */
+@media (min-width: 475px) {
+  .gradient3 {
+    font-size: var(--size-6xl);
+  }
+
+  .projects img {
+    height: 14rem;
+  }
+
+  .login {
+    height: 15rem;
+  }
+
+  .cafe,
+  .resume,
+  .survey,
+  .log {
+    font-size: var(--size-base);
+  }
+}
+
+/* md */
+@media (min-width: 768px) {
+  .gradient3 {
+    font-size: var(--size-8xl);
+  }
+
+  .projects img {
+    height: 15rem;
+  }
+
+  .login {
+    height: 16rem;
+  }
+
+  .cafe,
+  .resume,
+  .survey,
+  .log {
+    font-size: var(--size-base);
+  }
+}
+
+/* lg */
+@media (min-width: 1024px) {
+  .gradient3 {
+    font-size: var(--size-9xl);
+  }
+
+  .projects_img {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    align-content: center;
+    flex-direction: row;
+    justify-content: center;
+    padding-top: 9rem;
+    gap: 20px;
+  }
+
+  .projects img {
+    height: 19rem;
+  }
+
+  .survey_img {
+    padding-top: 12rem;
+  }
+
+  .login {
+    height: 17rem;
+  }
+
+  .login_img {
+    padding-top: 10rem;
+  }
+
+  .cafe,
+  .resume,
+  .survey,
+  .log {
+    font-size: var(--size-lg);
+    text-align: center;
+  }
+}
+
+/* xl */
+@media (min-width: 1280px) {
+  .gradient3 {
+    font-size: var(--size-10xl);
+  }
+
+  .projects_img {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
-    flex-direction: column;
-    padding-top: 0.5rem;
+    flex-direction: row;
+    padding-top: 9.2rem;
+    gap: 20px;
   }
 
-.projects img {
-    height: 13rem;
+  .projects img {
+    height: 16rem;
+  }
+
+  .survey_img {
+    padding-top: 0rem;
+    height: 0rem;
+    padding-left: 2rem;
+  }
+
+  .login_img {
+    height: 36rem;
+    padding-top: 9rem;
+  }
+
+  .cafe,
+  .resume,
+  .survey,
+  .log {
+    font-size: var(--size-lg);
+    text-align: center;
+  }
 }
 
-.login {
-    height: 14rem;
-}
-
-.cafe, .resume, .survey, .log {
-	font-size: var(--size-base);
-	font-weight: 500;
-}
-
-
-
-
- /* xs */
- @media (min-width: 475px) {
-    .gradient3 {
-        font-size: var(--size-6xl);
-      }
-    
-    .projects img {
-        height: 14rem;
-    }
-    
-    .login {
-        height: 15rem;
-    }
-    
-    .cafe, .resume, .survey, .log {
-        font-size: var(--size-base);
-    }
-}
-   
-/* md */
-@media (min-width: 768px) {
-    .gradient3 {
-        font-size: var(--size-8xl);
-      }
-    
-    .projects img {
-        height: 15rem;
-    }
-    
-    .login {
-        height: 16rem;
-    }
-    
-    .cafe, .resume, .survey, .log {
-        font-size: var(--size-base);
-    }
-}
-   
-   
-/* lg */
-@media (min-width: 1024px) {
-    .gradient3 {
-        font-size: var(--size-9xl);
-    }
-    
-    .projects_img {
-        display: flex;
-        flex-wrap: wrap;
-        align-items: center;
-        align-content: center;
-        flex-direction: row;
-        justify-content: center;
-        padding-top: 9rem;
-    }
-
-    .projects img {
-        height: 19rem;
-    }
-
-    .cafe_img {
-        padding-left: 2rem;
-        padding-right: 2rem;
-    }
-
-    .resume_img {
-        padding-right: 2rem;
-        padding-left: 2rem;
-    }
-    
-    .survey_img {
-        padding-top: 12rem;
-    }
-
-    .login {
-        height: 17rem;
-    }
-
-    .login_img {
-        padding-top: 10rem;
-    }
-    
-    .cafe, .resume, .survey, .log {
-        font-size: var(--size-lg);
-        text-align: center;
-    }
-}
-   
-/* xl */
-@media (min-width: 1280px) {
-    .gradient3 {
-        font-size: var(--size-10xl);
-    }
-    
-    .projects_img {
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: center;
-        align-items: center;
-        flex-direction: row;
-        padding-top: 9.2rem;
-    }
-
-    .projects img {
-        height: 16rem;
-    }
-
-    .survey_img {
-        padding-top: 0rem;
-        height: 0rem;
-        padding-left: 2rem;
-    }
-
-    .login_img{
-        height: 36rem;
-        padding-top: 9rem;
-    }
-    
-    .cafe, .resume, .survey, .log {
-        font-size: var(--size-lg);
-        text-align: center;
-    }
-}
-   
 /* 2xl */
 @media (min-width: 1536px) {
-    .gradient3 {
-        font-size: var(--size-11xl);
-    }
-    
-    .projects_img {
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: center;
-        align-items: center;
-        flex-direction: row;
-        padding-top: 9.2rem;
-    }
+  .gradient3 {
+    font-size: var(--size-11xl);
+  }
 
-    .projects img {
-        height: 21rem;
-    }
+  .projects_img {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    padding-top: 9.2rem;
+    gap: 20px;
+  }
 
-    .survey_img {
-        padding-top: 0rem;
-        height: 0rem;
-        padding-left: 2.3rem;
-    }
+  .projects img {
+    height: 21rem;
+  }
 
-    .login_img{
-        height: 38rem;
-        padding-top: 9rem;
-    }
-    
-    .cafe, .resume, .survey, .log {
-        font-size: var(--size-2xl);
-        text-align: center;
-    }
+  .survey_img {
+    padding-top: 0rem;
+    height: 0rem;
+    padding-left: 2.3rem;
+  }
+
+  .login_img {
+    height: 38rem;
+    padding-top: 9rem;
+  }
+
+  .cafe,
+  .resume,
+  .survey,
+  .log {
+    font-size: var(--size-2xl);
+    text-align: center;
+  }
 }
-   

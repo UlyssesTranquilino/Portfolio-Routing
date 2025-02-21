@@ -1,5 +1,5 @@
 #content-wrap {
-  padding-bottom: 12.5rem;   
+  padding-bottom: 12.5rem;
 }
 
 #page-container {
@@ -13,28 +13,26 @@
   margin-right: 0;
 }
 footer {
-  background-color: #050044;
   color: #fff;
   text-align: center;
-  position: absolute; 
-  bottom: 0; 
+  position: absolute;
+  bottom: 0;
   width: 104%;
   font-weight: 300;
-  transition: bottom 0.5s ease-in-out; 
+  transition: bottom 0.5s ease-in-out;
   height: 7.5rem;
   text-align: center;
   align-items: center;
-  
+  margin-bottom: 20px;
 }
 
 .footer {
   display: flex;
   flex-direction: column;
   align-items: center;
-    padding-right: 0;
+  padding-right: 0;
   margin-right: 0;
 }
-
 
 .row {
   display: flex;
@@ -55,14 +53,13 @@ footer {
   align-items: center;
   justify-content: center;
   text-align: center;
-  text-decoration: none; 
+  text-decoration: none;
   transition: background-color 0.3s ease;
 }
 
 .row a i:hover {
-  background-color: #1C2B80;
+  background-color: #1c2b80;
   color: #fff;
-  
 }
 
 .row p {
@@ -70,107 +67,93 @@ footer {
   margin-bottom: 0;
 }
 
-
-
-
-  /* xs */
-  @media (min-width: 475px) {
-
-    .row a i {
-      font-size: 1.5rem;
-      color: white;
-      padding: 0.5rem;
-      background-color: transparent;
-      border-radius: 50%;
-      width: 1rem;
-      margin-left: 0.5rem;
-      margin-right: 0.5rem;
-      height: 1rem;
-      align-items: center;
-      justify-content: center;
-      text-align: center;
-      text-decoration: none; 
-      transition: background-color 0.3s ease;
-    }
-    
-    .row p {
-      font-size: var(--size-sm);
-      margin-bottom: 0;
-    }
-    
-    
-    
+/* xs */
+@media (min-width: 475px) {
+  .row a i {
+    font-size: 1.5rem;
+    color: white;
+    padding: 0.5rem;
+    background-color: transparent;
+    border-radius: 50%;
+    width: 1rem;
+    margin-left: 0.5rem;
+    margin-right: 0.5rem;
+    height: 1rem;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
   }
-  
-  /* sm */
-  @media (min-width: 640px) {
 
-    footer {
-      background-color: #050044;
-      color: #fff;
-      text-align: center;
-      position: absolute; 
-      bottom: 0; 
-      width: 104%;
-      font-weight: 300;
-      transition: bottom 0.5s ease-in-out; 
-      height: 7.5rem;
-      text-align: center;
-      align-items: center;
-    }
-    
+  .row p {
+    font-size: var(--size-sm);
+    margin-bottom: 0;
   }
-  
-  /* md */
-  @media (min-width: 768px) {
+}
 
-    #content-wrap {
-      padding-bottom: 58.5rem;   
-    }
+/* sm */
+@media (min-width: 640px) {
+  footer {
+    color: #fff;
+    text-align: center;
+    position: absolute;
+    bottom: 0;
+    width: 104%;
+    font-weight: 300;
+    transition: bottom 0.5s ease-in-out;
+    height: 7.5rem;
+    text-align: center;
+    align-items: center;
+  }
+}
 
-    .row a i {
-      font-size: 1.4rem;
-      color: white;
-      padding: 0.5rem;
-      background-color: transparent;
-      border-radius: 50%;
-      width: 1rem;
-      margin-left: 0.5rem;
-      margin-right: 0.5rem;
-      height: 1rem;
-      align-items: center;
-      justify-content: center;
-      text-align: center;
-      text-decoration: none; 
-      transition: background-color 0.3s ease;
-    }
-        
-    .row p {
-      font-size: var(--size-sm);
-      margin-bottom: 0;
-    }
-    
+/* md */
+@media (min-width: 768px) {
+  #content-wrap {
+    padding-bottom: 58.5rem;
   }
-  
-  /* lg */
-  @media (min-width: 1024px) {
-    #content-wrap {
-      padding-bottom: 77.5rem;   
-    }
-  }
-  
-  /* xl */
-  @media (min-width: 1280px) {
-    #content-wrap {
-      padding-bottom: 74.5rem;   
-    }
 
+  .row a i {
+    font-size: 1.4rem;
+    color: white;
+    padding: 0.5rem;
+    background-color: transparent;
+    border-radius: 50%;
+    width: 1rem;
+    margin-left: 0.5rem;
+    margin-right: 0.5rem;
+    height: 1rem;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
   }
-  
-  /* 2xl */
-  @media (min-width: 1536px) {
-    #content-wrap {
-      padding-bottom: 74.5rem;   
-    }
+
+  .row p {
+    font-size: var(--size-sm);
+    margin-bottom: 0;
   }
-  
+}
+
+/* lg */
+@media (min-width: 1024px) {
+  #content-wrap {
+    padding-bottom: 77.5rem;
+  }
+}
+
+/* xl */
+@media (min-width: 1280px) {
+  #content-wrap {
+    padding-bottom: 74.5rem;
+  }
+}
+
+/* 2xl */
+@media (min-width: 1536px) {
+  #content-wrap {
+    padding-bottom: 74.5rem;
+  }
+}
